@@ -28,8 +28,8 @@ function seedDB() {
   const memberHash = hashPassword('member123');
 
   DB.users.push(
-    { id: 1, name: 'Alice Admin', email: 'admin@demo.com', passwordHash: adminHash, globalRole: 'admin', createdAt: new Date().toISOString() },
-    { id: 2, name: 'Bob Member', email: 'member@demo.com', passwordHash: memberHash, globalRole: 'member', createdAt: new Date().toISOString() },
+    { id: 1, name: 'Arpit Admin', email: 'admin@demo.com', passwordHash: adminHash, globalRole: 'admin', createdAt: new Date().toISOString() },
+    { id: 2, name: 'Dev Member', email: 'member@demo.com', passwordHash: memberHash, globalRole: 'member', createdAt: new Date().toISOString() },
     { id: 3, name: 'Carol Dev', email: 'carol@demo.com', passwordHash: memberHash, globalRole: 'member', createdAt: new Date().toISOString() }
   );
   DB.nextId.users = 4;
